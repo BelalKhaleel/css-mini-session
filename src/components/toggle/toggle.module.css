@@ -1,0 +1,55 @@
+.toggleBar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 25px;
+    right: 10%;
+    z-index: 99999;
+  
+  }
+  
+  .sunWrapper,
+  .moonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary);
+    transition: all 0.5s ease-in-out;
+  
+  }
+  
+  .toggleButton {
+    cursor: pointer;
+    position: relative;
+    width: 48px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:lightblue;
+    border-radius: 999px;
+    margin: 0 10px;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    transition: all 0.5s ease-in-out;
+  
+  }
+  
+  .toggleCircle {
+    position: absolute;
+    left: 4px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color:white;
+    transition: 0.2s left ease-in-out, 0.2s transform ease-in-out, background-color 0.5s ease-in-out;
+  }
+  
+  .toggleButton:hover>.toggleCircle {
+    transform: scale(0.9);
+  }
+  
+  .slide {
+    left: 26px;
+  }
